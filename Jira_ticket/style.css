@@ -1,0 +1,166 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+
+}
+
+.toolbar{
+    height: 5rem;
+    background-color: #1A1A40;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+}
+
+.colors{
+    height: 3rem;
+    background-color: #fff;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 2rem;
+}
+
+.colorChoice{
+    height: 1.5rem;
+    width: 20%;
+    background-color: black;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightblue{
+    background-color: lightblue;
+}
+.black{
+    background-color: black;
+}
+.yellow{
+    background-color: yellow;
+}
+.modifier{
+    height: 3rem;
+    width: 8%;
+    display: flex;
+    justify-content: space-around;
+}
+.btn{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+    border: 2px solid;
+    font-size: 2rem;
+}
+
+.btn:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+/* The modal template */
+.template{
+    width: 35rem;
+    height: 20rem;
+    background-color: #e6e6f8;
+    display: none;
+    position: absolute;
+    left: calc((100vw - 35rem) / 2);
+    top: calc((100vh - 20rem) / 2);
+    border: 2px solid black;
+}
+
+.toWrite{
+    width: 70%;
+    height: 100%;
+    border: none;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    resize: none;
+}
+.priority{
+    width: calc(100% - 70%);
+    height: 100%;
+    background-color: rgb(65 65 114);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.plist{
+    height: 10%;
+    width: 60%;
+}
+.border{
+    border: 5px solid gray;
+}
+
+/* Main area */
+
+.main{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ticket{
+    height: 10rem;
+    width: 20rem;
+    background-color: aliceblue;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid;
+}
+
+.pcolor{
+    height: 1rem;
+    border: 2px solid;
+}
+
+.ticketid{
+    padding: 1rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+.mycontent{
+    height: calc(100% - 1rem - 2rem - 1.5rem);
+    padding: 1rem;
+    outline: none;
+}
+
+.lock{
+    height: 1.5rem;
+    display: flex;
+    justify-content: end;
+    font-size: 1.5rem;
+}
+
+@media screen and (max-width:426px) {
+    .colors{
+        height: 2rem;
+        width: 55%;
+        margin-left: 1rem;
+    }
+    .modifier{
+        height: 2rem;
+        width: 30%;
+    }
+    .template{
+        width: 18rem;
+        height: 10rem;
+        background-color: #e6e6f8;
+        left: calc((100vw - 18rem) / 2);
+        top: calc((100vh - 10rem) / 2);
+        border: 2px solid black;
+    }
+
+}
